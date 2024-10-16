@@ -9,6 +9,6 @@ public class KarateRunner {
 //        }
 //        String fileName = filePath.replace('\\', '/');
 //        return Karate.run(fileName).relativeTo(KarateRunner.class);
-        return Karate.run("classpath:testcases/tademostoreweb/TC_Web_001_VerifyPuchasingByGuest.feature").relativeTo(KarateRunner.class);
+        return Karate.run("classpath:testcases/tademostoreweb/TC_Web_002_VerifyClearingShoppingCart.feature").relativeTo(KarateRunner.class);
     }
 }

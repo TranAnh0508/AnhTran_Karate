@@ -26,8 +26,6 @@ Feature: Verify puchasing by a Guest
     # Step4: In Shop page, click on "cart" icon to add a product to cart
     * def cartCount = text(basePage.cartCount)
     * def countNumber = karate.eval('parseInt(cartCount)')
-    * print 'DEFAULT: ***************** ' + countNumber
-
 
     * delay(1000)
     * waitFor(popup.popupCloseButton).click()
@@ -38,8 +36,6 @@ Feature: Verify puchasing by a Guest
     * delay(1000)
     * def cartCountLater = text(basePage.cartCount)
     * def countLaterNumber = karate.eval('parseInt(cartCountLater)')
-    * print 'DEFAULT: ***************** ' + countLaterNumber
-
 
     # VP: Verify Cart icon number at the top right of shopping page is increased correctly
     * assert countLaterNumber == countNumber + 1
@@ -47,9 +43,9 @@ Feature: Verify puchasing by a Guest
     # Step5: Click on Cart icon in the top right of shopping page
     * mouse().move(basePage.cartButton).click()
 
-#    * def classValue = attribute(cartPage.shoppingCartText, 'class')
-#    * print 'Class attribute value:', classValue
-#    * match classValue.includes('active') == true
+    * def classValue = attribute(cartPage.shoppingCartText, 'class')
+    * print 'Class attribute value:', classValue
+    * match classValue.includes('active') == true
 #
 #    # Verify the Texts are displayed correctly
 ##    * match attribute(cartPage.shoppingCartText, 'class').includes('active')
