@@ -1,0 +1,5 @@
+{
+  "currentProduct": "//footer[@class='footer-product']//a[@data-product_name='AirPods']//ancestor::div[@class='content-product ']",
+  "cartIcon": "//div[@class='content-product ']//footer[@class='footer-product']//a[@data-product_name='AirPods']",
+  "shopTitle": "//h1[text()='Shop']"
+}

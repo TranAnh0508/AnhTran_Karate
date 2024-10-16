@@ -1,0 +1,8 @@
+{
+  "genericLabel": "//span[text()='%s'][1]",
+  "genericLink": "//a[text()='%s'][1]",
+  "topMenu": "//div[@class='menu-main-container']//a[text()='%s']",
+  "title": "//h1[@class='title']",
+  "cartIcon": "//div[@class='header-wrapper']//a[contains(@href,'cart')]//*[name()='svg']/ancestor::span[@class='et_b-icon']",
+  "cartCount": "//div[@class='header-wrapper']//a[contains(@href,'cart')]//span[contains(@class,'count')]"
+}

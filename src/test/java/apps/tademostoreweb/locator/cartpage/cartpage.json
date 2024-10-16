@@ -1,0 +1,10 @@
+{
+  "returnShopButton": "//span[text()='Return To Shop']/ancestor::a",
+  "emptyText": "//h1[text()='YOUR SHOPPING CART IS EMPTY']",
+  "shoppingCartText": "//a[text()=' Shopping cart']",
+  "checkoutText": "//a[text()=' Checkout']",
+  "orderStatusText": "//a[text()=' Order status']",
+  "productName": "//a[text()='AirPods']",
+  "productPrice": "//td[@data-title='Price']//bdi",
+  "proceedToCheckoutBtn": "//a[contains(text(),'Proceed to checkout')]"
+}
