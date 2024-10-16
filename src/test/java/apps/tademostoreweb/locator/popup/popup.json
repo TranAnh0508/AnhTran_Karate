@@ -1,0 +1,3 @@
+{
+  "popupCloseButton": "//button[@class='pum-close popmake-close']"
+}

@@ -21,7 +21,7 @@ function f() {
                 }
         },
         msedge_local: {
-            settings: { type: 'msedgedriver', platformName: '', webDriverSession: { capabilities: { browserName: 'edge' } } }
+            settings: { type: 'msedgedriver', platformName: 'windows', webDriverSession: { capabilities: { browserName: 'edge' } } }
         },
         firefox_local: {
             settings: { type: 'geckodriver', platformName: '', webDriverSession: { capabilities: { "alwaysMatch":{"browserName":"firefox", "moz:firefoxOptions" : {"binary":"C:\\Program Files\\Mozilla Firefox\\firefox.exe"}}} } }

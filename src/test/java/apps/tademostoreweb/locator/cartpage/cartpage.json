@@ -6,5 +6,5 @@
   "orderStatusText": "//a[text()=' Order status']",
   "productName": "//a[text()='AirPods']",
   "productPrice": "//td[@data-title='Price']//bdi",
-  "proceedToCheckoutBtn": "//a[contains(text(),'Proceed to checkout')]"
+  "proceedToCheckoutBtn": "//div/a[contains(text(),'Proceed to checkout')]"
 }

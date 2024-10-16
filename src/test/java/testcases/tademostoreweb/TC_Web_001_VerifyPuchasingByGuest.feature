@@ -7,6 +7,7 @@ Feature: Verify puchasing by a Guest
     * def basePage = locator('tademostoreweb', 'basepage')
     * def cartPage = locator('tademostoreweb', 'cartpage')
     * def shopPage = locator('tademostoreweb', 'shoppage')
+    * def popup = locator('tademostoreweb', 'popup')
 
   Scenario: Verify puchasing by a Guest
     # Step 1: Navigate to app
@@ -14,35 +15,37 @@ Feature: Verify puchasing by a Guest
 
     # Step 2: Click on Cart icon in the top right of shopping page
     * mouse().move(basePage.cartIcon).click()
-    And delay(2000)
-
-    #Verify step 2
-#    * match text(cartPage.emptyText) == 'YOUR SHOPPING CART IS EMPTY'
+    # Verify step 2
+    * match text(cartPage.emptyText) == 'YOUR SHOPPING CART IS EMPTY'
 
     # Step3: Click on "Return to Shop" button
     * mouse().move(cartPage.returnShopButton).click()
-    And delay(3000)
+    # Verify step 3
     * match text(shopPage.shopTitle) == 'Shop'
 
     # Step4: In Shop page, click on "cart" icon to add a product to cart
     * def cartCount = text(basePage.cartCount)
-    * print 'Cart Count:', cartCount
-    * mouse().move(shopPage.currentProduct).go()
-    And mouse().move(shopPage.cartIcon).click()
-    And delay(2000)
-    * def cartCountLater = text(basePage.cartCount)
-    * print 'Expected value:', cartCountLater
+    * def countNumber = karate.eval('parseInt(cartCount)')
+    * print 'DEFAULT: ***************** ' + countNumber
 
-    # Set the Product Model's attributes
-    * def productName = 'AirPods'
-    * def productPrice = '290.00'
+
+    * delay(1000)
+    * waitFor(popup.popupCloseButton).click()
+    * delay(1000)
+    * mouse().move(shopPage.currentProduct).go()
+    * mouse().move(shopPage.cartIcon).click()
+
+    * delay(1000)
+    * def cartCountLater = text(basePage.cartCount)
+    * def countLaterNumber = karate.eval('parseInt(cartCountLater)')
+    * print 'DEFAULT: ***************** ' + countLaterNumber
+
 
     # VP: Verify Cart icon number at the top right of shopping page is increased correctly
-    * assert cartCountLater != cartCount
+    * assert countLaterNumber == countNumber + 1
 
     # Step5: Click on Cart icon in the top right of shopping page
-    * mouse().move(basePage.cartIcon).click()
-    And delay(2000)
+    * mouse().move(basePage.cartButton).click()
 
 #    * def classValue = attribute(cartPage.shoppingCartText, 'class')
 #    * print 'Class attribute value:', classValue
@@ -58,4 +61,9 @@ Feature: Verify puchasing by a Guest
 #    And match text(cartPage.orderStatusText) == productPrice
 
     # Step6: Click on "Process to checkout" button
-    * mouse().move(cartPage.proceedToCheckoutBtn).click()
+#    * mouse().move(cartPage.proceedToCheckoutBtn).click()
+
+    # Verify step 6
+
+    # Step 7: Enter required fields  then click on "Place Order" button
+

@@ -3,6 +3,7 @@
   "genericLink": "//a[text()='%s'][1]",
   "topMenu": "//div[@class='menu-main-container']//a[text()='%s']",
   "title": "//h1[@class='title']",
-  "cartIcon": "//div[@class='header-wrapper']//a[contains(@href,'cart')]//*[name()='svg']/ancestor::span[@class='et_b-icon']",
+  "cartIcon": "//div[@class='header-wrapper']//a[contains(@href,'cart')]//*[name()='svg']",
+  "cartButton": "//div[contains(@class,'connect-block-element')]//div[contains(@class,'et_element-top-level')]/a[@href='https://demo.testarchitect.com/cart/']",
   "cartCount": "//div[@class='header-wrapper']//a[contains(@href,'cart')]//span[contains(@class,'count')]"
 }
