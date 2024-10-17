@@ -7,5 +7,6 @@
   "cartButton": "//div[contains(@class,'connect-block-element')]//div[contains(@class,'et_element-top-level')]/a[@href='https://demo.testarchitect.com/cart/']",
   "cartCount": "//div[@class='header-wrapper']//a[contains(@href,'cart')]//span[contains(@class,'count')]",
   "shopLink": "//div[@class='header-wrapper']//*[@class='item-link' and text()='Shop']",
-  "noticeOKButton": "//span[@id='cn-notice-buttons']/a"
+  "noticeOKButton": "//span[@id='cn-notice-buttons']/a",
+  "loginLink": "//div[@class='header-wrapper']//span[contains(text(),'Log in / Sign up')]"
 }

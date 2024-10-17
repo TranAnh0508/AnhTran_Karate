@@ -1,0 +1,3 @@
+{
+  "mailTextbox": "//input[@id='inbox_field']"
+}
