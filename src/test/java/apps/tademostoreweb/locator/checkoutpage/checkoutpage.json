@@ -1,0 +1,12 @@
+{
+  "firstNameTextbox": "//input[@id='billing_first_name']",
+  "lastNameTextbox": "//input[@id='billing_last_name']",
+  "countryDrop": "//span[@id='select2-billing_country-container']",
+  "streetTextbox": "//input[@id='billing_address_1']",
+  "cityTextbox": "//input[@id='billing_city']",
+  "postcodeTextbox": "//input[@id='billing_postcode']",
+  "phoneTextbox": "//input[@id='billing_phone']",
+  "emailTextbox": "//input[@id='billing_email']",
+  "createCheckbox": "//input[@id='createaccount']",
+  "paymentRadio": "//div[@id='payment']//label[contains(text(),'%s')]"
+}

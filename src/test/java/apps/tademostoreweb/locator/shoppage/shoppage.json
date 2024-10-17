@@ -1,5 +1,7 @@
 {
   "currentProduct": "//footer[@class='footer-product']//a[@data-product_name='AirPods']//ancestor::div[@class='content-product ']",
   "cartIcon": "//div[@class='content-product ']//footer[@class='footer-product']//a[@data-product_name='AirPods']",
-  "shopTitle": "//h1[text()='Shop']"
+  "shopTitle": "//h1[text()='Shop']",
+  "productName": "//h2[@class='product-title']/a[text()='%s']",
+  "productPrice": "//a[text()='%s']/ancestor::h2[@class='product-title']/following-sibling::span//bdi"
 }

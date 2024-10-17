@@ -1,0 +1,3 @@
+{
+  "thankyouText": "//p[text()='Thank you. Your order has been received.']"
+}

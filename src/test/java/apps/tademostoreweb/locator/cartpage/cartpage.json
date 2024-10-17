@@ -1,11 +1,15 @@
 {
   "returnShopButton": "//span[text()='Return To Shop']/ancestor::a",
   "emptyText": "//h1[text()='YOUR SHOPPING CART IS EMPTY']",
+  "proceedToCheckoutBtn": "//div/a[contains(text(),'Proceed to checkout')]",
+  "clearCart": "//a[@class='clear-cart']",
+  "emptyCartText": "//h1[text()='YOUR SHOPPING CART IS EMPTY']",
   "shoppingCartText": "//a[text()=' Shopping cart']",
   "checkoutText": "//a[text()=' Checkout']",
   "orderStatusText": "//a[text()=' Order status']",
-  "productName": "//a[text()='AirPods']",
-  "productPrice": "//td[@data-title='Price']//bdi",
-  "proceedToCheckoutBtn": "//div/a[contains(text(),'Proceed to checkout')]",
-  "clearCart": "//a[@class='clear-cart']"
+  "placeOrderButton": "//button[@id='place_order']",
+  "productName": "//a[@class='product-title' and text()='%s']",
+  "productPrice": "//a[text()='%s']/ancestor::td[@class='product-details']/following-sibling::td[@class='product-price']//bdi",
+  "productQuantity": "//a[text()='%s']/ancestor::td[@class='product-details']/following-sibling::td[@class='product-quantity']//input",
+  "productSubtotal": "//a[text()='%s']/ancestor::td[@class='product-details']/following-sibling::td[@class='product-subtotal']//bdi"
 }
