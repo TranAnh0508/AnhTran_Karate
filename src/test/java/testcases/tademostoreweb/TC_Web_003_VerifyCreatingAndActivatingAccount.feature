@@ -20,10 +20,14 @@ Feature: Verify creating and activating an account
     * mouse().move(basePage.loginLink).click()
 
     # Step 3: Enter email in Register email textbox
+    * def user = 'anhtran123'
+    * def mailDomain = 'pokemail.net'
     * delay(1000)
     * mouse().move(basePage.noticeOKButton).click()
     * delay(1000)
-    * input(myaccountPage.registerEmailTextbox, 'your.name.yyyymmdd@mailinator.com')
+    * input(myaccountPage.registerEmailTextbox, user + '@' + mailDomain)
+    * scroll(myaccountPage.registerButton).click()
+    * delay(1000)
 
     # Step 4: Close Shopping page window
     * quit()
@@ -38,6 +42,8 @@ Feature: Verify creating and activating an account
     * mouse().move(mailbasePage.publicInboxLink).click()
 
     # Step 7: Enter email at step 3 to textbox at the top right of the "Public Messages" page
-    * input(publicmessagePage.mailTextbox, 'your.name.yyyymmdd@mailinator.com')
+    * input(publicmessagePage.mailTextbox, '')
 
     # Step 8: Click on email with subject contained "Sample Website account has been created!"
+    *
+

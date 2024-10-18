@@ -1,3 +1,4 @@
 {
-  "registerEmailTextbox": "//input[@id='reg_email']"
+  "registerEmailTextbox": "//input[@id='reg_email']",
+  "registerButton": "//button[text()='Register']"
 }

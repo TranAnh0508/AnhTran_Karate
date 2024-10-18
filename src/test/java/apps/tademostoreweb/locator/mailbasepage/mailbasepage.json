@@ -1,3 +1,4 @@
 {
-  "publicInboxLink": "//a[text()='Public Inbox']"
+  "userButton": "//span[@id='inbox-id']",
+  "userInput": "//span[@id='inbox-id']/input"
 }
